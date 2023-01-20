@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FISICA </title>
+  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+    <!-- Compiled and minified JavaScript -->
+            
+</head>
+<body>
+  <div id="content-wrapper">
+    <header class="header header--bg" style="height: 100vh">
+      <div class="container">
+        <nav class="navbar ">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="" style="color: white; font-size: 25px; font-family: 'Geometria-Bold';" href="#">Proyecto Fisica</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="#longitud">LONGITUD</a></li>
+              <li><a href="#masa">MASA</a></li>
+              <li><a href="#tiempo">TIEMPO</a></li>
+              <li><a href="#team">EQUIPO</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row " style="padding-top: 100px">
+          <div class="col-lg-6">
+            <img class="img-responsive" src="2.png"   alt="">
+          </div>
+          <div class="col-lg-6 header__content">
+            <h1 class="title">Proyecto conversor de unidades <span class="title-style"></span></h1>
+            <p>Este proyecto se realizo para facilitar la conversion de unidades. De esta forma, las conversiones que se manejaran seran: longitud, masa, tiempo. Se desarrollo el proyecto con simulaciones y animaciones para facilitar el aprendizaje y tener mas dinamismo.  </p>
+            <a class="header__button" style="padding:13px 100px; text-align: center; margin-left:30%" href="#distancia">Ver Mas </a>
+             
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="steps">
+      <div class="container">
+        <div class="page-section text-center">
+          <h2 class="page-section__title" id="longitud">longitud</h2>
+          <div class="page-section__title-style">
+            <span class="first-line"></span>
+            <span class="second-line"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              
+                 <h2 class="page-section__title">Seleccione una opcion</h2> 
+                 <br> 
+  <select class="form-control" id="distancia">
+      <option id="kilometro">     kilometro </option>
+      <option id="hectometro">     hectometro</option>
+      <option id="decametro">     decametro</option>
+      <option id="metro">     metro</option>
+      <option id="decimetro">     decimetro </option>
+      <option id="centimetro">     centimetro</option>
+      <option id="milimetro">     milimetro</option>
+      <option id="pulgada">     pulgada</option>
+      <option id="pie">     pie</option>
+      <option id="yarda">     yarda</option>
+      <option id="milla">     milla</option>
+    </select>
+               <div class="input-group   " style=" float: left; margin-top: 25px; width: 55%; margin-right: 5%">
+            <span class="input-group-addon info"><span class="glyphicon glyphicon-info-sign"></span></span>
+            <input type="number" placeholder="introduce el numero a convertir" class="form-control" id="numero1">
+        </div>
+         <div class="" style="float: left;  margin-top: 15px;width: 30%; margin-right: 5%">
+          <input type="button" class="button" id="conversorDistancia" value="convertir">
+             </div>
+
+        <div class="input-group   " style=" float: left; margin-top: 25px; width: 100%;">
+            <span class="input-group-addon info"   id="marcaSlider">0</span></span>
+            <input type="range" onchange="cambiarMarca()"  id="disabledRange" disabled placeholder="introduce el numero a convertir" class="form-control">
+        </div>
+        <div class="input-group   " style=" float: left; margin-top: 35px; width: 100%;">
+        <table class="table " style="width: 100%; ">
+            <thead>
+      <tr>
+        <th scope="col">#</th>
+        <td scope="col">unidad</td>
+        <td scope="col">valor</td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>kilometro</td>
+        <td class="valor"></td>
+       
+      </tr>
+      <tr  style="background-color: #187DED;color: white;">
+        <th scope="row">2</th>
+        <td>hectometro</td>
+        <td class="valor"></td>
+   
+      </tr >
+        <tr">
+        <th scope="row">3</th>
+        <td>decametro</td>
+        <td class="valor"></td>
+      </tr>
+
+            <tr style="background-color: #187DED;color: white;">
+        <th scope="row">4</th>
+        <td>metro</td>
+        <td class="valor"></td>
+       
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>decimetro</td>
+        <td class="valor"></td>
+   
+      </tr >
+        <tr style="background-color: #187DED;color: white">
+        <th scope="row">6</th>
+        <td>centimetro</td>
+        <td class="valor"></td>
+      </tr>
+
+            <tr>
+        <th scope="row">7</th>
+        <td>milimetro</td>
+        <td class="valor"></td>
+       
+      </tr>
+      <tr  style="background-color: #187DED;color: white;">
+        <th scope="row">8</th>
+        <td>pulgada</td>
+        <td class="valor"></td>
+
+        </tr >
+        <tr>
+        <th scope="row">9</th>
+        <td>pie</td>
+        <td class="valor"></td>
+      </tr>
+
+            <tr style="background-color: #187DED;color: white;">
+        <th scope="row">10</th>
+        <td>yarda</td>
+        <td class="valor"></td>
+       
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td>milla</td>
+        <td class="valor"></td>
+    </tbody>
+</table>        
+        </div>
+               
+            </div>
+            <div class="col-md-5">
+              <div class="text-center steps__single">
+                <img src="assets/images/longitud.png" alt="">
+               
+              </div>
+            </div>
+             
+          </div>
+           
+        </div>
+      </div>
+    </section>
+
+    <section class="video video--bg">
+      <div class="container">
+        <div class="page-section">
+          <div class="row">
+            <div class="col-md-12" style="padding: 10px,100px;">
+              <div class="video__right text-center">
+                <h2 class="video__title" id="masa">Masa</h2>
+                <div class="video__title-style">
+                  <span class="first-line"></span>
+                  <span class="second-line"></span>
+                </div>
+                 
+              
+                 <h2 class="video__title">Seleccione una opcion</h2> 
+                 <br> 
+  <select class="form-control" id="masa1">
+      <option id="kilogramo">     kilogramo </option>
+      <option id="hectogramo">     hectogramo</option>
+      <option id="decagramo">     decagramo</option>
+      <option id="gramo">     gramo</option>
+      <option id="decigramo">     decigramo</option>
+      <option id="centigramo">     centigramo</option>
+      <option id="miligramo">     miligramo</option>
+      <option id="libra">     libra</option>
+      <option id="onza">     onza</option>
+      <option id="tonelada">     toneladas</option>
+    </select>
+               <div class="input-group   " style=" float: left; margin-top: 25px; width: 55%; margin-right: 5%">
+            <span class="input-group-addon info"><span class="glyphicon glyphicon-info-sign"></span></span>
+            <input type="text" placeholder="introduce el numero a convertir" class="form-control" id="numero3">
+        </div>
+         <div class="" style="float: left;  margin-top: 15px;width: 30%; margin-right: 5%;">
+          <input type="button" class="button" value="convertir" id="conversorMasa">
+             </div>
+
+        <div class="input-group   " style=" float: left; margin-top: 25px; width: 100%;">
+            <span class="input-group-addon info" id="marcaSlider2">0</span></span>
+            <input type="range" onchange="cambiarMarca2()" id="disabledRange2" disabled placeholder="introduce el numero a convertir" class="form-control">
+        </div>
+        <div class="input-group   " style=" float: left; margin-top: 35px; width: 100%;">
+        <table class="table " style="width: 100%; ">
+            <thead>
+      <tr style="background-color: white;">
+        <th scope="col">#</th>
+        <td scope="col">unidad</td>
+        <td scope="col">valor</td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: white;">
+        <th scope="row">1</th>
+        <td>kilogramo</td>
+        <td class="valor2" ></td>
+       
+      </tr>
+      <tr  style="background-color: white;">
+        <th scope="row">2</th>
+        <td>hectogramo</td>
+        <td class="valor2" ></td>
+   
+      </tr >
+        <tr style="background-color: white;">
+        <th scope="row">3</th>
+        <td>decagramo</td>
+        <td class="valor2" ></td>
+      </tr>
+
+            <tr style="background-color: white;">
+        <th scope="row">4</th>
+        <td>gramo</td>
+        <td class="valor2" ></td>
+       
+      </tr>
+      <tr  style="background-color: white;">
+        <th scope="row">5</th>
+        <td>decigramo</td>
+        <td class="valor2" ></td>
+   
+      </tr >
+        <tr style="background-color: white;">
+        <th scope="row">6</th>
+        <td>centigramo</td>
+        <td class="valor2" ></td>
+      </tr>
+
+            <tr style="background-color: white;">
+        <th scope="row">7</th>
+        <td>miligramo</td>
+        <td class="valor2" ></td>
+       
+      </tr>
+      <tr  style="background-color: white;">
+        <th scope="row">8</th>
+        <td>libra</td>
+        <td class="valor2" ></td>
+
+        </tr >
+        <tr style="background-color: white;">
+        <th scope="row">9</th>
+        <td>onza</td>
+        <td class="valor2"></td>
+      </tr>
+
+            <tr style="background-color: white;">
+        <th scope="row">10</th>
+        <td>tonelada</td>
+        <td class="valor2"></td>
+       
+      </tr>
+    </tbody>
+</table>        
+        </div>
+               
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <div class="page-section text-center">
+          <h2 class="page-section__title" id="tiempo">Tiempo</h2>
+          <div class="page-section__title-style">
+            <span class="first-line"></span>
+            <span class="second-line"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              
+                 <h2 class="page-section__title">Seleccione una opcion</h2> 
+                 <br> 
+  <select class="form-control" id="tiempo1">
+      <option id="año">     año </option>
+      <option id="mes">     mes</option>
+      <option id="dia">     dia</option>
+      <option id="hora">     hora</option>
+      <option id="minuto">     minutos </option>
+      <option id="segundo">     segundos</option>
+    </select>
+               <div class="input-group   " style=" float: left; margin-top: 25px; width: 55%; margin-right: 5%">
+            <span class="input-group-addon info"><span class="glyphicon glyphicon-info-sign"></span></span>
+            <input type="number" placeholder="introduce el numero a convertir" class="form-control" id="numero2">
+        </div>
+         <div class="" style="float: left;  margin-top: 15px;width: 30%; margin-right: 5%">
+          <input type="button"  class="button"  value="convertir" id="conversorTiempo">
+             </div>
+
+        <div class="input-group   " style=" float: left; margin-top: 25px; width: 100%;">
+            <span class="input-group-addon info"   id="marcaSlider3">0</span></span>
+            <input type="range" onchange="cambiarMarca3()"  id="disabledRange3" disabled placeholder="introduce el numero a convertir" class="form-control">
+        </div>
+        <div class="input-group   " style=" float: left; margin-top: 35px; width: 100%;">
+        <table class="table " style="width: 100%; ">
+            <thead>
+      <tr>
+        <th scope="col">#</th>
+        <td scope="col">unidad</td>
+        <td scope="col">valor</td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>año</td>
+        <td class="valor3"></td>
+       
+      </tr>
+      <tr  style="background-color: #187DED;color: white;">
+        <th scope="row">2</th>
+        <td>mes</td>
+        <td class="valor3"></td>
+   
+      </tr >
+        <tr">
+        <th scope="row">3</th>
+        <td>dia</td>
+        <td class="valor3"></td>
+      </tr>
+
+            <tr style="background-color: #187DED;color: white;">
+        <th scope="row">4</th>
+        <td>hora</td>
+        <td class="valor3"></td>
+       
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>minutos</td>
+        <td class="valor3"></td>
+   
+      </tr >
+        <tr style="background-color: #187DED;color: white">
+        <th scope="row">6</th>
+        <td>segundos</td>
+        <td class="valor3"></td>
+      </tr>
+    </tbody>
+</table>        
+        </div>
+               
+            </div>
+            <div class="col-md-5">
+              <div class="text-center steps__single">
+                <img src="assets/images/step2.png" alt="" style="width: 400px; padding-top: 70px;">
+              </div>
+            </div>
+             
+          </div>
+           
+        </div>
+      </div>
+    </section>
+  
+    <!-- video-popup -->
+    <div class="container">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wKtPBOb80II?autoplay=0" frameborder="0" allowfullscreen="" id="video"  allowscriptaccess="always"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+
+    <section class="team team--bg" id="team">
+      <div class="container">
+        <div class="page-section">
+          <div class="text-center">
+            <h2 class="page-section__title">Nuestro  equipo</h2>
+            <div class="team__title-style">
+              <span class="first-line"></span>
+              <span class="second-line"></span>
+            </div>
+            <p class="page-section__subtitle">El equipo de trabajopara el proyecto esta conformado por:</p>
+          </div>
+          <div class="row gutters-80">
+            <div class="col-md-6">
+              <div class="thumbnail team__single">
+                <div class="bio text-center">
+                  <img src="assets/images/team1.png" alt="">
+                  <h2>Santiago Riaño Mogollon</h2>
+                  <p>aprendiz en programacion de software</p>
+                </div>
+                <div class="caption">
+                  <div class="social-icons">
+                    <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                    <li><a href="#"><i class="flaticon-twitter-logo-silhouette"></i></a></li>
+                    <li><a href="#"><i class="flaticon-google-plus"></i></a></li>
+                    <li><a href="#"><i class="flaticon-pinterest-logo"></i></a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thumbnail team__single">
+                <div class="bio text-center">
+                  <img src="assets/images/team2.png" alt="">
+                  <h2>Laura Catalina Yepes Vargas</h2>
+                  <p>aprendiz en programacion de software</p>
+                </div>
+                <div class="caption">             
+                  <div class="social-icons">
+                    <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                    <li><a href="#"><i class="flaticon-twitter-logo-silhouette"></i></a></li>
+                    <li><a href="#"><i class="flaticon-google-plus"></i></a></li>
+                    <li><a href="#"><i class="flaticon-pinterest-logo"></i></a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer footer--bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer__left">
+            <p>Gracias por usar el conversor
+            </p>
+          </div>
+          <div class="col-md-6 footer__social-icons">
+            <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+            <li><a href="#"><i class="flaticon-twitter-logo-silhouette"></i></a></li>
+            <li><a href="#"><i class="flaticon-google-plus"></i></a></li>
+            <li><a href="#"><i class="flaticon-pinterest-logo"></i></a></li>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+
+
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="assets/owl-slider/owl.carousel.min.js"></script> -->
+
+  <script>
+    $(document).ready(function() {
+      
+      $('button').click( function(e) {
+        $('.collapse').collapse('hide');
+      });
+
+
+      
+    });
+  </script>
+  <script src="style.js"></script>
+</body>
+</html>  
+
